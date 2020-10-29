@@ -14,7 +14,7 @@ module.exports = router.post("/", (req, res) => {
       )},${phone.replace(/\,/g, "*#*")},${message.replace(/\,/g, "*#*")}`
     );
     logStream.end("\n");
-    res.json(req.body.data);
+    return res.json(req.body.data);
   }
-  res.status(404);
+  return res.status(404);
 });
