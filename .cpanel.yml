@@ -3,4 +3,3 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/rajdocto/api/
     - /bin/cp -R * $DEPLOYPATH
-    - /bin/npm install
